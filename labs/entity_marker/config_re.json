@@ -1,0 +1,18 @@
+{
+    "model_name_or_path": "xlm-roberta-base",
+    "cache_dir": null,
+    "use_fast": true,
+    "seed": 1,
+    "train_data": "/content/drive/MyDrive/00-Irakaskuntza/HAP-LAP-masterra/NLP-Applications-2/Part1: Information-extraction/notebooks/data/ace-e+/train.oneie.json",
+    "eval_data": "/content/drive/MyDrive/00-Irakaskuntza/HAP-LAP-masterra/NLP-Applications-2/Part1: Information-extraction/notebooks/data/ace-e+/dev.oneie.json",
+    "test_data": "/content/drive/MyDrive/00-Irakaskuntza/HAP-LAP-masterra/NLP-Applications-2/Part1: Information-extraction/notebooks/data/ace-e+/test.oneie.json",
+    "save_dir": "ace-re/",
+    "do_eval": true,
+    "do_test": true,
+    "fp16": true,
+    "batch_size": 16,
+    "learning_rate": 1e-5,
+    "epochs": 20,
+    "num_warmup_steps": 150,
+    "gradient_accumulation_steps": 4
+}
