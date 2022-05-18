@@ -5,3 +5,7 @@ data/passages
 assignments/index
 desktop.ini
 data/ResearchPapersDataset
+
+__pycache__
+.rasa
+labs/restaurantbot/models
