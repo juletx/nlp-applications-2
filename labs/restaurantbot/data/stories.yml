@@ -2,9 +2,35 @@ version: "3.1"
 
 stories:
 
-- story: happy path
+- story: order pizza
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+  - intent: order_pizza
+  - action: pizza_form
+  - active_loop: pizza_form
+  - slot_was_set:
+    - requested_slot: pizzaSize
+  - active_loop: null
+  - action: utter_ask_drink
+  - intent: deny
+  - action: utter_requested_pizza
+
+- story: order pizza + drink
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: order_pizza
+  - action: pizza_form
+  - active_loop: pizza_form
+  - slot_was_set:
+    - requested_slot: pizzaSize
+  - active_loop: null
+  - action: utter_ask_drink
+  - intent: order_drink
+  - action: drink_form
+  - active_loop: drink_form
+  - slot_was_set:
+    - requested_slot: drink
+  - active_loop: null
+  - action: utter_requested_pizza_and_drink

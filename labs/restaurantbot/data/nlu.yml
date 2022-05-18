@@ -49,43 +49,30 @@ nlu:
     - no way
     - not really
 
-- intent: mood_great
-  examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
-
-- intent: mood_unhappy
-  examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
-
 - intent: bot_challenge
   examples: |
     - are you a bot?
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+- intent: ask_restaurant
+  examples: |
+    - I want a restaurant
+    - Please, which [chinese](cuisine) resturant should I go to?
+    - Suggest me an [Italian](cuisine) restaurant, please
+
+- intent: order_pizza
+  examples: |
+    - I want to order a pizza
+    - I would like a [small](pizzaSize) pizza, please
+    - Can I have a [large](pizzaSize) pizza
+    - [medium](pizzaSize) pizza, please
+
+- intent: order_drink
+  examples: |
+    - Yeah, I want a [beer](drink)
+    - Yes, a [soda](drink) please
+    - [coffee](drink) please
+    - just [wine](drink)
+    - Yes, I want something to drink

@@ -5,9 +5,53 @@ intents:
   - goodbye
   - affirm
   - deny
-  - mood_great
-  - mood_unhappy
   - bot_challenge
+  - order_pizza
+  - order_drink
+  - ask_restaurant
+
+entities:
+  - cuisine
+  - drink
+  - pizzaSize
+
+slots:
+  cuisine:
+    type: text
+    influence_conversation: true
+    mappings: 
+      - type: from_entity
+        entity: cuisine
+        intent: ask_restaurant
+
+  drink:
+    type: text
+    influence_conversation: true
+    mappings: 
+      - type: from_entity
+        entity: drink
+        intent: order_drink
+    
+  pizzaSize:
+    type: text
+    influence_conversation: true
+    mappings: 
+      - type: from_entity
+        entity: pizzaSize
+        intent: ordr_pizza
+
+forms:
+  pizza_form:
+    required_slots:
+      - pizzaSize
+
+  drink_form:
+    required_slots:
+      - drink
+
+  restaurant_form:
+    required_slots:
+      - cuisine
 
 responses:
   utter_greet:
@@ -29,6 +73,21 @@ responses:
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+
+  utter_requested_pizza:
+  - text: "You ordered a {pizzaSize} pizza"
+
+  utter_requested_pizza_and_drink:
+  - text: "You ordered a {pizzaSize} pizza and {drink}"
+
+  utter_ask_pizzaSize:
+  - text: "Which pizza size do you want?"
+
+  utter_ask_drink:
+  - text: "Do you want any drink?"
+
+  utter_ask_cuisine:
+  - text: "Which cuisine do you prefer?"
 
 session_config:
   session_expiration_time: 60
