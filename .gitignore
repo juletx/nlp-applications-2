@@ -9,3 +9,4 @@ data/ResearchPapersDataset
 __pycache__
 .rasa
 labs/restaurantbot/models
+project
