@@ -40,8 +40,6 @@
     - Wednesday, May 11, 2022, 3:00 – 5:30pm 
     - Monday, May 18, 2022, 3:00 – 5:30pm
 
-
-
 ## Labs, assignments and project
 
 - **Laboratories** are focused to put the theory in practice (no submission). 
@@ -66,7 +64,9 @@
 
 ## Evaluation
 
-**Class assignments**: 50% of the grading **Final project:** 50% of the grading
+**Class assignments**: 50% of the grading
+
+**Final project:** 50% of the grading
 
 - Each group of student (**2/3 people**) will propose a subject for the final project to one of the lecturers, depending on his/her interests.
 - Project proposal are due to May 19 (note that you will have 2 weeks for finishing!).
