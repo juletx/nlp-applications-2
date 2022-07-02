@@ -1,4 +1,4 @@
-﻿# NLP Applications II: Information Extraction, Question Answering and Conversational Systems
+﻿# NLP Applications II: Information Extraction, Question Answering, Recommender Systems and Conversational Systems
 
 ## Plan
 
